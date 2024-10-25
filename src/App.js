@@ -1,8 +1,13 @@
-import React from 'react'
-
+import React from 'react';
+import { Route, Routes } from 'react-router-dom';
+import Startup from './pages/Startup';
 const App = () => {
   return (
-    <div>App</div>
+    <div>
+      <Routes>
+        <Route path='/' element={<Startup />} />
+      </Routes>
+    </div>
   )
 }
 
